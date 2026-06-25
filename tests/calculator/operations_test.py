@@ -28,3 +28,10 @@ def test_division():
 
     with pytest.raises(ValueError):
         operations.divide(5, 0)
+
+def test_media():
+    valores = [4, 4, 4]
+    assert operations.average(valores) == 4
+
+    values = [7,5,6,1]
+    assert operations.average(valores) == 4.75
